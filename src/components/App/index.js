@@ -6,7 +6,6 @@ import { withTranslation } from 'react-i18next';
 import moment from 'moment';
 import 'moment/locale/fr';
 import 'moment/locale/en-gb';
-
 import numeral from 'numeral';
 import 'numeral/locales/fr';
 import 'numeral/locales/en-gb';
@@ -15,6 +14,7 @@ import { localeTo } from '../../helpers/locales';
 
 import './App.css';
 import Nav from '../Nav';
+import Header from '../Section/Header';
 
 class App extends React.Component {
   componentDidMount() {
@@ -43,11 +43,7 @@ class App extends React.Component {
         </Helmet>
         <div id="layout">
           <Nav />
-          <div className="content-wrapper">
-            <div className="container">
-              {t('test')}
-            </div>
-          </div>
+          <Header />
         </div>
       </div>
     );

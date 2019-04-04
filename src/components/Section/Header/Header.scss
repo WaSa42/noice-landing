@@ -1,0 +1,101 @@
+@import '../../../theme.scss';
+
+#header {
+  width: 100%;
+  background: $primary;
+  background: linear-gradient(
+    -150deg,
+    lighten($primary, 10%),
+    darken($primary, 10%)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: calc(3rem + 56px);
+  padding-bottom: calc(5rem + 48px);
+
+  .text {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    font-size: 33px;
+  }
+
+  p {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .block {
+    animation: float 6s ease-in-out infinite;
+    width: 35%;
+    height: 125%;
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    position: absolute;
+  }
+
+  .left {
+    top: calc(100% - 1rem);
+    left: 1rem;
+    transform: translateY(-50%);
+  }
+
+  /* Centering an absolute position element */
+  .center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: floatCenter 6s ease-in-out infinite;
+  }
+
+  .right {
+    top: 1rem;
+    right: 1rem;
+    transform: translateY(-50%);
+  }
+
+  .btn {
+    position: absolute;
+    bottom: 2rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 120px;
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(calc(-50% - 20px));
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes floatCenter {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, calc(-50% - 20px));
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}

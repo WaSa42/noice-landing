@@ -1,21 +1,29 @@
-$quad1: #001437;
-$quad2: #7898fb;
-$quad3: #5ce5d5;
-$quad4: #b8fb3c;
+$color1: #35212a;
+$color2: #3b55ce;
+$color3: #ff61be;
+$color4: #ffdef3;
 
-$primary: $quad1;
-$secondary: $quad2;
+$primary: $color1;
+$secondary: $color2;
+
+$theme-colors: (
+  'color1': $color1,
+  'color2': $color2,
+  'color3': $color3,
+  'color4': $color4,
+  'primary': $primary,
+  'secondary': $secondary
+);
 
 $light: #f5f5f6;
-$dark: #333;
+$dark: #343a40;
 
 $textColorForBg: (
   quad1: $light,
   quad2: $light,
   quad3: $light,
-  quad4: $light,
+  quad4: $dark,
   primary: $light,
   secondary: $light,
-  dark: $light,
-  light: $dark
+  dark: $light
 );

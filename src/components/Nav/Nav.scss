@@ -3,38 +3,12 @@
 #nav {
   z-index: 15;
 
-  .navbar {
-    -ms-flex-pack: start;
-    padding: 0;
-    background: linear-gradient(45deg, $primary 50%, $secondary, $quad3);
-    color: map-get($textColorForBg, primary);
-
-    -webkit-box-direction: normal;
-    -webkit-box-orient: horizontal;
-    -webkit-box-pack: start;
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-
-    .container {
-      flex-wrap: nowrap;
-
-      .navbar-brand {
-        padding: 1rem;
-        text-align: center;
-      }
-    }
+  &.navbar {
+    background: linear-gradient(45deg, $color1 65%, $color3);
   }
 
-  .navbar-text {
-    overflow: hidden;
-    margin: 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 1em;
-
-    @media (min-width: 1024px) {
-      font-size: 1.25em;
-    }
+  .navbar-toggler {
+    border-color: $primary !important;
+    color: $primary !important;
   }
 }

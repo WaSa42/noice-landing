@@ -1,7 +1,7 @@
 {
-  "test": "Yeah, le test marche !",
-  "undefined": "Non défini",
-  "splashLoading": "Chargement...",
+  "test": "Yeah, the test works !",
+  "undefined": "Undefined",
+  "splashLoading": "Loading...",
   "project": {
     "name": "Noice Landing",
     "shortName": "noice<span class=\"font-weight-bold\">LDG</span>"
@@ -17,9 +17,9 @@
   },
   "section": {
     "header": {
-      "title": "Titre Projet",
-      "subtitle": "Un template original pour présenter un projet rapidement.",
-      "button": "En savoir plus"
+      "title": "Landing",
+      "subtitle": "A beautiful template to build and present things faster.",
+      "button": "Discover"
     }
   }
 }
