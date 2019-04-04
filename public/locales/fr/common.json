@@ -1,0 +1,18 @@
+{
+  "test": "Yeah, le test marche !",
+  "undefined": "Non défini",
+  "splashLoading": "Chargement...",
+  "project": {
+    "name": "Noice Landing",
+    "shortName": "noice<span class=\"font-weight-bold\">LDG</span>"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español",
+    "de": "Deutsch",
+    "fr": "Français"
+  },
+  "accessibility": {
+
+  }
+}
