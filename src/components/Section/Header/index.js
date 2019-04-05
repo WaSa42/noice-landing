@@ -19,10 +19,11 @@ const Header = ({ t }) => (
         <p>{t('section.header.subtitle')}</p>
       </div>
     </div>
-    <a href="#" className="btn btn-outline-color4 btn-lg">
+
+    <button onClick={() => false} className="btn btn-outline-color4 btn-lg" role="link" type="button">
       <FontAwesomeIcon icon={faRocket} />
       <span className="ml-2">{t('section.header.button')}</span>
-    </a>
+    </button>
   </header>
 );
 

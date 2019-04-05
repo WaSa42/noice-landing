@@ -2,13 +2,25 @@
 
 #nav {
   z-index: 15;
-
-  &.navbar {
-    background: linear-gradient(45deg, $color1 65%, $color3);
-  }
+  background-color: transparent !important;
+  background-image: none;
 
   .navbar-toggler {
-    border-color: $primary !important;
-    color: $primary !important;
+    outline: none;
+
+    svg {
+      background-image: none !important;
+    }
+  }
+
+  &.collapsed,
+  &.scrolled {
+    background-color: $color1 !important;
+    background-image: linear-gradient(45deg, $color1 65%, $color3);
+
+    .navbar-toggler {
+      border-color: $primary !important;
+      color: $primary !important;
+    }
   }
 }

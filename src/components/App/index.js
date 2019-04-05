@@ -15,6 +15,7 @@ import { localeTo } from '../../helpers/locales';
 import './App.css';
 import Nav from '../Nav';
 import Header from '../Section/Header';
+import Section1 from '../Section/1';
 
 class App extends React.Component {
   componentDidMount() {
@@ -44,6 +45,7 @@ class App extends React.Component {
         <div id="layout">
           <Nav />
           <Header />
+          <Section1 />
         </div>
       </div>
     );
