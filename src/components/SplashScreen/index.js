@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleNotch } from '@fortawesome/free-solid-svg-icons/faCircleNotch';
 
-import './SplashScreen.css';
+import './SplashScreen.scss';
 
 const SplashScreen = ({ text, children }) => (
   <div className="splashScreen">

@@ -1,5 +1,4 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
 
@@ -12,45 +11,41 @@ import 'numeral/locales/en-gb';
 
 import { localeTo } from '../../helpers/locales';
 
-import './App.css';
+import './App.scss';
+
 import Nav from '../Nav';
 import Header from '../Section/Header';
 import Section1 from '../Section/1';
 
-class App extends React.Component {
-  componentDidMount() {
-    const { i18n } = this.props;
+const App = ({ i18n, t }) => {
+  const handleLanguageSetting = () => {
+    setModulesLocales();
+    setMetas();
+  };
+
+  const setModulesLocales = () => {
     moment.locale(localeTo(i18n.language, 'moment'));
     numeral.locale(localeTo(i18n.language, 'moment'));
-  }
+  };
 
-  componentDidUpdate(prevProps) {
-    const { i18n } = this.props;
-    if (prevProps.i18n.language !== i18n.language) {
-      moment.locale(localeTo(i18n.language, 'moment'));
-      numeral.locale(localeTo(i18n.language, 'moment'));
-    }
-  }
+  const setMetas = () => {
+    document.title = t('project.title');
+    document.getElementsByTagName('meta').description.content = t('project.description');
+    document.getElementsByTagName('meta').language.content = i18n.language;
+  };
 
-  render() {
-    const { i18n, t } = this.props;
-    return (
-      <div id="app">
-        <Helmet>
-          <title>{t('project.title')}</title>
-          <meta name="description" content={t('project.description')} />
-          <meta name="robots" content="all" />
-          <meta name="language" content={i18n.language} />
-        </Helmet>
-        <div id="layout">
-          <Nav />
-          <Header />
-          <Section1 />
-        </div>
+  React.useEffect(handleLanguageSetting, [i18n.language]);
+
+  return (
+    <div id="app">
+      <div id="layout">
+        <Nav />
+        <Header />
+        <Section1 />
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 App.propTypes = {
   i18n: PropTypes.shape({ language: PropTypes.string }),

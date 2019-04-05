@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import './ScreenEffect.css';
+import './ScreenEffect.scss';
 
 const ScreenEffect = ({ children, navbar }) => (
   <div id="screen-effect" className={classNames({ navbar })}>{children}</div>
