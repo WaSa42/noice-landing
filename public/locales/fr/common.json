@@ -22,6 +22,13 @@
       "title": "Titre Projet",
       "subtitle": "Un template original pour présenter un projet rapidement.",
       "button": "En savoir plus"
+    },
+    "1": {
+      "visible": "Quelques mots, une grosse typo <span class=\"marker mr-2\"> et un peu de style</span> marque les esprits.",
+      "d-lg-block": "Un petit paragraphe dans la plus simple des formes pour faire une bonne transition."
+    },
+    "2": {
+      "text": "Ici, on a une image, mais la preview du produit, c'est mieux !"
     }
   }
 }

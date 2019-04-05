@@ -16,6 +16,7 @@ import './App.scss';
 import Nav from '../Nav';
 import Header from '../Section/Header';
 import Section1 from '../Section/1';
+import Section2 from '../Section/2';
 
 const App = ({ i18n, t }) => {
   const handleLanguageSetting = () => {
@@ -42,6 +43,7 @@ const App = ({ i18n, t }) => {
         <Nav />
         <Header />
         <Section1 />
+        <Section2 />
       </div>
     </div>
   );

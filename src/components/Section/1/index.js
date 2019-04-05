@@ -6,7 +6,10 @@ import './Section1.scss';
 
 const Section1 = ({ t }) => (
   <section id="section-1">
-    <p>{t('test')}</p>
+    <div className="container">
+      <h3 dangerouslySetInnerHTML={{ __html: t('section.1.visible') }} />
+      <h3 className="d-none d-lg-block" dangerouslySetInnerHTML={{ __html: t('section.1.d-lg-block') }} />
+    </div>
   </section>
 );
 

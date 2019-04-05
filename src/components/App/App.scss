@@ -1,10 +1,12 @@
-/* Modules & Bootstrap */
-@import '../../theme.scss';
+@import '../../theme';
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 @import '../../../node_modules/animate.css';
 @import './flag-icon.scss';
 
-/* ALL */
+html {
+  height: 100%;
+}
+
 body {
   background-color: $light;
 }
@@ -34,14 +36,4 @@ input[type='reset'].no-style {
   color: inherit;
   font: inherit;
   cursor: pointer;
-}
-
-#layout {
-  overflow: hidden;
-  min-height: 100vh;
-}
-
-.content-wrapper {
-  position: relative;
-  padding-top: 1rem;
 }
