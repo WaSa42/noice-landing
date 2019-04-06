@@ -2,48 +2,38 @@
 
 #section-2 {
   position: relative;
-  min-height: calc(66vh - 56px);
+  display: inline-block;
+  width: 100%;
   background-color: $secondary;
   background-image: url('./section-background.jpg');
   background-size: cover;
-  background-position: center;
-  padding: 4.75rem 0;
+  background-position: bottom;
+  text-align: right;
+
+  h4 {
+    height: calc(66vh - 56px);
+    display: inline-block;
+    padding: 1rem;
+    margin: 0 1rem -6px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba($color1, 0.95);
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+  }
 
   @media screen and (min-width: 768px) {
     padding: 0;
-  }
 
-  h4 {
-    position: absolute;
-    display: block;
-    bottom: 1rem;
-    right: 1rem;
-    max-width: 100%;
-    margin: 0;
-    text-align: right;
-    font-size: 20px;
-    line-height: 1.5;
-    color: #fff;
-
-    @media screen and (min-width: 768px) {
-      display: inline;
-      bottom: 2rem;
-      right: 2rem;
-      max-width: 50%;
-      font-size: 50px;
+    h4 {
+      margin: 0 2rem -6px;
+      font-size: 30px;
+      padding: 1rem 2rem;
     }
-
-    span {
-      background-color: $color1;
-    }
-  }
-
-  .filter {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba($color4, 0.25);
   }
 }

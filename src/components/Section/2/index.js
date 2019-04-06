@@ -6,8 +6,7 @@ import './Section2.scss';
 
 const Section2 = ({ t }) => (
   <section id="section-2">
-    <div className="filter" />
-    <h4><span>{t('section.2.text')}</span></h4>
+    <h4>{t('section.2.text')}</h4>
   </section>
 );
 
