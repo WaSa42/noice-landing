@@ -22,6 +22,13 @@
       "title": "Landing",
       "subtitle": "A beautiful template to build and present things faster.",
       "button": "Discover"
+    },
+    "shortText": {
+      "visible": "Some words, a big font <span class=\"marker mr-2\"> and a bit of style</span> stay in minds.",
+      "d-lg-block": "A small block of text with simple design makes great transitions."
+    },
+    "projectPreview": {
+      "text": "Project preview"
     }
   }
 }

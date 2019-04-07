@@ -1,17 +1,18 @@
 @import '../../../theme';
 
-#section-2 {
+#project-preview {
   position: relative;
   display: inline-block;
   width: 100%;
-  background-color: $secondary;
-  background-image: url('./section-background.jpg');
+  background-color: #ccc;
+  background-image: url('./preview.jpg');
   background-size: cover;
   background-position: bottom;
   text-align: right;
 
   h4 {
-    height: calc(66vh - 56px);
+    height: calc(50vh - 56px);
+    min-height: 200px;
     display: inline-block;
     padding: 1rem;
     margin: 0 1rem -6px;
@@ -31,6 +32,7 @@
     padding: 0;
 
     h4 {
+      min-height: 320px;
       margin: 0 2rem -6px;
       font-size: 30px;
       padding: 1rem 2rem;

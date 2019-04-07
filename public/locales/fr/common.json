@@ -23,11 +23,11 @@
       "subtitle": "Un template original pour présenter un projet rapidement.",
       "button": "En savoir plus"
     },
-    "1": {
+    "shortText": {
       "visible": "Quelques mots, une grosse typo <span class=\"marker mr-2\"> et un peu de style</span> marque les esprits.",
       "d-lg-block": "Un petit paragraphe dans la plus simple des formes pour faire une bonne transition."
     },
-    "2": {
+    "projectPreview": {
       "text": "Aperçu du projet"
     }
   }

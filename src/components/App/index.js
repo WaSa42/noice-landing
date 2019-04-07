@@ -15,8 +15,9 @@ import './App.scss';
 
 import Nav from '../Nav';
 import Header from '../Section/Header';
-import Section1 from '../Section/1';
-import Section2 from '../Section/2';
+import ShortText from '../Section/ShortText';
+import ProjectPreview from '../Section/ProjectPreview';
+import Comparison from '../Section/Comparison';
 
 const App = ({ i18n, t }) => {
   const handleLanguageSetting = () => {
@@ -42,8 +43,9 @@ const App = ({ i18n, t }) => {
       <div id="layout">
         <Nav />
         <Header />
-        <Section1 />
-        <Section2 />
+        <ShortText />
+        <ProjectPreview />
+        <Comparison />
       </div>
     </div>
   );
