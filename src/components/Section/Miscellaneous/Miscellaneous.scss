@@ -1,0 +1,10 @@
+@import '../../../theme';
+
+#miscellaneous {
+  position: relative;
+  padding: 2rem 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 5rem 0;
+  }
+}

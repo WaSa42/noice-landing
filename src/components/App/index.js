@@ -17,7 +17,8 @@ import Nav from '../Nav';
 import Header from '../Section/Header';
 import ShortText from '../Section/ShortText';
 import ProjectPreview from '../Section/ProjectPreview';
-import Comparison from '../Section/Comparison';
+import Miscellaneous from '../Section/Miscellaneous';
+import Footer from '../Section/Footer';
 
 const App = ({ i18n, t }) => {
   const handleLanguageSetting = () => {
@@ -45,7 +46,8 @@ const App = ({ i18n, t }) => {
         <Header />
         <ShortText />
         <ProjectPreview />
-        <Comparison />
+        <Miscellaneous />
+        <Footer />
       </div>
     </div>
   );

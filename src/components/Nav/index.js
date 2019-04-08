@@ -4,11 +4,9 @@ import classNames from 'classnames';
 import { withTranslation } from 'react-i18next';
 
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
+import { faBook } from '@fortawesome/free-solid-svg-icons/faBook';
+import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons/faQuestionCircle';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons/faFacebook';
-import { faTwitch } from '@fortawesome/free-brands-svg-icons/faTwitch';
-import { faWikipediaW } from '@fortawesome/free-brands-svg-icons/faWikipediaW';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './Nav.scss';
@@ -57,40 +55,39 @@ const Nav = ({ t }) => {
         <div className={classNames('collapse navbar-collapse', { show: collapsed })} id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <button onClick={() => false} className="no-style nav-link" role="link" type="button">Section 1</button>
+              <button onClick={() => false} className="no-style nav-link" role="link" type="button">
+                Description
+              </button>
             </li>
             <li className="nav-item">
-              <button onClick={() => false} className="no-style nav-link" role="link" type="button">Section 2</button>
+              <button onClick={() => false} className="no-style nav-link" role="link" type="button">
+                Preview
+              </button>
             </li>
             <li className="nav-item">
-              <button onClick={() => false} className="no-style nav-link" role="link" type="button">Section 3</button>
+              <button onClick={() => false} className="no-style nav-link" role="link" type="button">
+                Last Info
+              </button>
             </li>
           </ul>
           <div className="my-2 my-lg-0 d-none d-lg-block">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a href="http://google.com" target="_blank" rel="noopener noreferrer" className="nav-link">
-                  <FontAwesomeIcon icon={faWikipediaW} />
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="http://google.com" target="_blank" rel="noopener noreferrer" className="nav-link">
-                  <FontAwesomeIcon icon={faTwitch} />
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="http://google.com" target="_blank" rel="noopener noreferrer" className="nav-link">
-                  <FontAwesomeIcon icon={faFacebook} />
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="http://google.com" target="_blank" rel="noopener noreferrer" className="nav-link">
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon icon={faBook} />
+                  <span className="ml-2">Documentation</span>
                 </a>
               </li>
               <li className="nav-item">
                 <a href="http://google.com" target="_blank" rel="noopener noreferrer" className="nav-link">
                   <FontAwesomeIcon icon={faGithub} />
+                  <span className="ml-2">Sources</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="http://google.com" target="_blank" rel="noopener noreferrer" className="nav-link">
+                  <FontAwesomeIcon icon={faQuestionCircle} />
+                  <span className="ml-2">FAQ</span>
                 </a>
               </li>
             </ul>

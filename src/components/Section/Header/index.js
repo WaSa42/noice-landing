@@ -20,7 +20,12 @@ const Header = ({ t }) => (
       </div>
     </div>
 
-    <button onClick={() => false} className="btn btn-outline-color4 btn-lg" role="link" type="button">
+    <button
+      onClick={() => window.scrollTo({ top: window.innerHeight - 56, behavior: 'smooth' })}
+      className="btn btn-outline-color4 btn-lg"
+      role="link"
+      type="button"
+    >
       <FontAwesomeIcon icon={faRocket} />
       <span className="ml-2">{t('section.header.button')}</span>
     </button>
